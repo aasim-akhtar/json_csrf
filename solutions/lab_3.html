@@ -1,0 +1,29 @@
+<html>
+  <body>
+
+    <script>
+        function submitRequest() {
+            fetch(
+            "http://localhost:8000/api/create/lab_3",{
+                method: 'POST',
+                body: JSON.stringify({
+                    UserName: "aasim",
+                    Role: "Peasant"
+                }),
+                headers:{
+                    "Content-Type": "text/plain"
+                    // "Content-Type": "application/json"
+                }
+            }
+        )
+        // @todo 
+        .then(response ) 
+            
+        }
+
+
+    </script>
+
+      <button type="button" onclick="submitRequest()" > Submit Request </button>
+  </body>
+</html>
